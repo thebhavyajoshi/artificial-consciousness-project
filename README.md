@@ -1,7 +1,7 @@
 # Artificial Consciousness Project
 
 **Founder:** Bhavya Joshi  
-**Status:** Foundational research stage  
+**Status:** Stage 2 — Organism-0 design complete; implementation next  
 **Current version:** 0.1  
 **Started:** 17 July 2026
 
@@ -25,25 +25,48 @@ This project does not assume that consciousness can be created simply by making 
 
 > Can a continuously operating artificial agent develop consciousness-like properties when its continued stability, self-model, embodied perspective, functional emotions, and autobiographical identity are causally connected?
 
-## Current stage
+## Stage 1: Foundational thesis
 
-Stage 1 defines the project's foundational thesis, working definition of consciousness, first research question, initial experiments, falsification criteria, and ethical principles.
-
-Read the complete thesis:
+Stage 1 defines the project's working definition of consciousness, research hypothesis, first questions, falsification criteria, and ethical principles.
 
 - [Foundational Research Thesis, Version 0.1](research/foundational-thesis-v0.1.md)
 - [Research Ethics and Welfare Principles](ethics/research-principles.md)
 
-## First planned prototype
+## Stage 2: Organism-0 blueprint
 
-The first prototype will be a simple digital organism living in a simulated 2D environment. It will initially have no language model. It will possess limited energy, structural integrity, sensors, movement, memory, internal regulatory variables, and consequences arising from its actions.
+Organism-0 is the project's first experimental digital organism. It will live in a partially observable 24 × 24 simulated world and regulate energy, structural integrity, and fatigue.
 
-The first comparison will test:
+It will initially have no language model, internet access, external tools, or physical-world control.
 
-- **Agent A:** a conventional externally rewarded reinforcement-learning agent;
-- **Agent B:** a self-regulating artificial organism with a self-model and autobiographical memory.
+Its proposed architecture combines:
 
-The project will measure whether Agent B develops more persistent, adaptive, identity-like behavior while avoiding unsupported claims of subjective experience.
+- homeostatic valuation;
+- recurrent integration across time;
+- a predictive self-model;
+- autobiographical event memory;
+- measurable functional precursor states; and
+- comparison agents and matched ablations.
+
+Read the complete Stage 2 blueprint:
+
+- [Organism-0 blueprint index](design/organism-0/README.md)
+- [World, body, senses, actions, and valuation](design/organism-0/01-world-body-and-valuation.md)
+- [Cognitive architecture and experiments](design/organism-0/02-cognitive-architecture-and-experiments.md)
+- [Technology stack and build plan](design/organism-0/03-stack-build-plan-and-success-criteria.md)
+
+## First implementation milestone
+
+Build a deterministic Gymnasium environment called `ArtificialOrganism/Organism0-v0` with:
+
+- reproducible seeded worlds;
+- body and homeostatic dynamics;
+- partial observations;
+- seven discrete actions;
+- a Pygame renderer;
+- structured event logs; and
+- automated tests.
+
+Neural-network training will begin only after the world's mechanics are correct, inspectable, and reproducible.
 
 ## Scientific position
 
@@ -64,6 +87,12 @@ artificial-consciousness-project/
 │   └── foundational-thesis-v0.1.md
 ├── ethics/
 │   └── research-principles.md
+├── design/
+│   └── organism-0/
+│       ├── README.md
+│       ├── 01-world-body-and-valuation.md
+│       ├── 02-cognitive-architecture-and-experiments.md
+│       └── 03-stack-build-plan-and-success-criteria.md
 └── experiments/
     └── README.md
 ```
@@ -72,7 +101,7 @@ artificial-consciousness-project/
 
 The project will eventually require contributors in machine learning, reinforcement learning, artificial life, robotics, cognitive science, computational neuroscience, philosophy of mind, and AI ethics.
 
-The immediate priority is to design and build one measurable artificial organism before making broader claims.
+The immediate priority is to build one measurable artificial organism before making broader claims.
 
 ## Author
 
